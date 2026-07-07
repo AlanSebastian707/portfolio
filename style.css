@@ -170,16 +170,12 @@ header div h1{
     
 }
 
-/* ==========================================================================
-   Collapsible Sidebar Styles
-   ========================================================================== */
 
-/* Smooth Scroll */
 html {
     scroll-behavior: smooth;
 }
 
-/* Sidebar CSS Variables */
+
 :root {
     --sidebar-width: 280px;
     --sidebar-bg: rgba(20, 20, 20, 0.75);
@@ -187,7 +183,7 @@ html {
     --sidebar-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Toggle Button */
+
 .sidebar-toggle {
     position: fixed;
     top: 25px;
@@ -225,7 +221,7 @@ html {
     transform-origin: center;
 }
 
-/* Hamburger to X state */
+
 .sidebar-toggle.active .hamburger-line:nth-child(1) {
     transform: translateY(7px) rotate(45deg);
 }
@@ -238,7 +234,7 @@ html {
     transform: translateY(-7px) rotate(-45deg);
 }
 
-/* Sidebar Overlay */
+
 .sidebar-overlay {
     position: fixed;
     top: 0;
@@ -259,7 +255,6 @@ html {
     visibility: visible;
 }
 
-/* Sidebar Container */
 .sidebar {
     position: fixed;
     top: 0;
@@ -284,7 +279,7 @@ html {
     transform: translateX(0);
 }
 
-/* Sidebar Header */
+
 .sidebar-header {
     display: flex;
     flex-direction: column;
@@ -363,7 +358,6 @@ html {
     color: var(--sidebar-accent);
 }
 
-/* Adjust layout on small mobile screens to prevent overlapping with content */
 @media screen and (max-width: 480px) {
     .sidebar-toggle {
         top: 15px;
