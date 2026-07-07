@@ -19,9 +19,7 @@ function scoregrade(score){
     }
 }
 
-// ==========================================================================
-// Collapsible Sidebar Interactivity
-// ==========================================================================
+
 document.addEventListener('DOMContentLoaded', () => {
     const sidebar = document.getElementById('sidebar');
     const sidebarToggle = document.getElementById('sidebarToggle');
@@ -30,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const sections = document.querySelectorAll('section');
     const header = document.querySelector('header');
 
-    // Toggle Sidebar
+    
     function toggleSidebar() {
         sidebar.classList.toggle('active');
         sidebarToggle.classList.toggle('active');
@@ -42,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
         sidebarOverlay.addEventListener('click', toggleSidebar);
     }
 
-    // Close sidebar when clicking any link
+    
     sidebarLinks.forEach(link => {
         link.addEventListener('click', () => {
             sidebar.classList.remove('active');
@@ -51,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Intersection Observer to highlight active link
+    
     const observerOptions = {
         root: null,
         rootMargin: '-20% 0px -60% 0px',
@@ -75,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     sections.forEach(section => observer.observe(section));
 
-    // Clear active links when user scrolls to header
+    
     if (header) {
         const headerObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
